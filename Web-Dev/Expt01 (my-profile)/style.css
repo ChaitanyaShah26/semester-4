@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0px;
+	padding: 20px;
+	background-color: #040C18;
+}
+
+header {
+	margin: 4px;
+	padding: 4px;
+	text-align: right;
+	border-bottom: 1px solid #1E2027;
+}
+
+header a {
+	padding: 8px;
+	text-decoration: none;
+	color: #BAD7E3;
+}
+header a:hover {
+	color: #86CEE5;
+}
+
+main {
+	margin: 0 auto;
+	padding: 16px;
+	max-width: 800px;
+	color: #D9E0E3;
+	text-align: center;
+}
+
+#profile-pic {
+	margin: 0px;
+	padding: 4px;
+	max-width: 240px;
+	max-height: 240px;
+	border-radius: 50%;
+	border-color: #BAD7E3;
+	border-bottom: 4px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-style: solid;
+	box-shadow: 0 0 10px #86CEE4;
+}
+
+h1 {
+	margin: 0;
+	font-family: "Homemade Apple", serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+#main-section {
+	margin: 0;
+	padding: 16px;
+	border-radius: 40px;
+	background-color: rgba(30, 38, 50, 0.4);
+	height: fit-content;
+	text-align: left;
+	color: #a8d5e3;
+}
+
+#main-section h2 {
+	color: #FFFFFF;
+	border-bottom: 1px solid #D9E0E3;
+}
+
+#about-me, #education, #skills, #experience, #contact {
+	padding: 16px 8px;
+}
+
+#about-me p {
+	text-align: justify;
+}
+
+#education h4 {
+	display: inline-block;
+	width: 50%;
+	margin: 8px 0px;
+	border-bottom: 0.05em dotted #1E2632;
+	color: #BAD7E3;
+}
+#education p {
+	display: inline-block;
+	width: 40%;
+	margin: 8px 0px;
+	border-bottom: 0.05em dotted #1E2632;
+	text-align: right;
+	color: #86CEE4;
+}
+
+#skills {
+	text-align: center;
+}
+#skills h2 {
+	text-align: left;
+}
+
+#experience h4 {
+	padding: 4px auto;
+	color: #BAD7E3;
+	border-bottom: 1px solid #1E2632;
+}
+#experience p {
+	padding: 4px auto;
+	text-align: justify;
+	color: #86CEE4;
+}
+
+#contact {
+	text-align: center;
+}
+#contact h2 {
+	text-align: left;
+}
+#contact a {
+	text-decoration: none;
+	padding: 4px;
+}
+#contact a:hover>img {
+	transform: scale(1.1);
+}
