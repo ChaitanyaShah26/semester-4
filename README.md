@@ -16,9 +16,6 @@
     <a href="https://github.com/ChaitanyaShah26/semester-4/tree/main/Web-Dev">
     	<img src="https://custom-icon-badges.demolab.com/badge/Web_Dev-2B547E?style=for-the-badge&logo=folder" alt="Web-Dev">
     </a>
-    <a href="https://github.com/ChaitanyaShah26/semester-4/tree/main/DT">
-    	<img src="https://custom-icon-badges.demolab.com/badge/DT-2B547E?style=for-the-badge&logo=folder" alt="DT">
-    </a>
 </p> 
 
 #
