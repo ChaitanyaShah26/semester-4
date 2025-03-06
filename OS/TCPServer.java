@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.*;
 
 class TCPServer {
-    public static void main(String args) throws Exception
+    public static void main(String args[]) throws Exception
     {
         String s;
         ServerSocket ss1=new ServerSocket(80);
