@@ -21,7 +21,7 @@
 #
 
 <p align="center">
-	<img src="https://go-skill-icons.vercel.app/api/icons?i=c,python,jupyter,html,css,javascript,bootstrap" alt="Tech Stack">
+	<img src="https://go-skill-icons.vercel.app/api/icons?i=python,c,java,jupyter,html,css,javascript,bootstrap" alt="Tech Stack">
 </p>
 
 
