@@ -1,0 +1,21 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+#registrationForm {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 600px;
+	gap: 20px;
+}
+
+form h2 {
+	text-align: center;
+	color: midnightblue;
+}
+
+form button {
+	font-size: 120%;
+}
