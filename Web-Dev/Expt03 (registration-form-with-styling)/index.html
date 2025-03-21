@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Chaitanya Shah">
+
+	<title>Registration Form</title>
+
+	<!-- CSS Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<form id="registrationForm">
+		<h2>Registration Form</h2>
+
+		<div id="nameInput">
+			<fieldset>
+				<legend><label for="firstName">First Name:</label></legend>
+				<input type="text" id="firstName" placeholder="Enter your First Name" required>
+			</fieldset>
+
+			<fieldset>
+				<legend><label for="lastName">Last Name:</label></legend>
+				<input type="text" id="lastName" placeholder="Enter your Last Name" required>
+			</fieldset>
+		</div>
+		
+
+		<fieldset>
+			<legend><label for="email">Email:</label></legend>
+			<input type="email" id="email" placeholder="Enter your vlaid Email" required>
+		</fieldset>
+
+		<fieldset>
+			<legend><label for="mobile">Mobile Number:</label></legend>
+			<span>
+				<label>+91</label>
+				<input type="tel" id="mobile" pattern="[0-9]{10}" placeholder="Enter your contact no." required>
+			</span>
+		</fieldset>
+
+		<fieldset id="genderInput">
+			<legend><label>Gender:</label></legend>
+			<span>
+				<input type="radio" id="genderMale" name="gender" value="genderMale" checked required />
+	    		<label for="genderMale">Male</label>
+			</span>
+			<span>
+				<input type="radio" id="genderFemale" name="gender" value="genderFemale" required />
+	    		<label for="genderFemale">Female</label>
+			</span>
+			<span>
+				<input type="radio" id="genderOther" name="gender" value="genderOther" required />
+	    		<label for="genderOther">Others</label>
+			</span>
+		</fieldset>
+
+		<fieldset>
+			<legend><label for="dob">Date of Birth:</label></legend>
+			<input type="date" id="dob" required>
+		</fieldset>
+        
+        <div id="addressInput">        	
+        	<fieldset id="addressInput-state">
+				<legend><label for="state">State:</label></legend>
+				<select id="state" required>
+		            <option value="">Select State</option>
+		            <option value="Andhra Pradesh">Andhra Pradesh</option>
+		            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+		            <option value="Assam">Assam</option>
+		            <option value="Bihar">Bihar</option>
+		            <option value="Chhattisgarh">Chhattisgarh</option>
+		            <option value="Goa">Goa</option>
+		            <option value="Gujarat">Gujarat</option>
+		            <option value="Haryana">Haryana</option>
+		            <option value="Himachal Pradesh">Himachal Pradesh</option>
+		            <option value="Jharkhand">Jharkhand</option>
+		            <option value="Karnataka">Karnataka</option>
+		            <option value="Kerala">Kerala</option>
+		            <option value="Madhya Pradesh">Madhya Pradesh</option>
+		            <option value="Maharashtra">Maharashtra</option>
+		            <option value="Manipur">Manipur</option>
+		            <option value="Meghalaya">Meghalaya</option>
+		            <option value="Mizoram">Mizoram</option>
+		            <option value="Nagaland">Nagaland</option>
+		            <option value="Odisha">Odisha</option>
+		            <option value="Punjab">Punjab</option>
+		            <option value="Rajasthan">Rajasthan</option>
+		            <option value="Sikkim">Sikkim</option>
+		            <option value="Tamil Nadu">Tamil Nadu</option>
+		            <option value="Telangana">Telangana</option>
+		            <option value="Tripura">Tripura</option>
+		            <option value="Uttar Pradesh">Uttar Pradesh</option>
+		            <option value="Uttarakhand">Uttarakhand</option>
+		            <option value="West Bengal">West Bengal</option>
+		        </select>
+			</fieldset>
+
+			<fieldset id="addressInput-city">
+				<legend><label for="city">City</label></legend>
+				<input type="text" id="city" placeholder="Enter your current City" required>
+			</fieldset>	
+	        
+	        <fieldset id="addressInput-pincode">
+				<legend><label for="pincode">Pincode:</label></legend>
+				<input type="number" id="pincode" pattern="[0-9]{6}" placeholder="Enter valid Pincode" required>
+			</fieldset>	
+        </div>
+
+		<fieldset id="hobbiesInput">
+			<legend><label>Hobbies:</label></legend>
+	        <span>
+	        	<input type="checkbox" name="hobbies" value="Music">
+	        	<label>Music</label>
+	        </span>
+	        <span>
+	        	<input type="checkbox" name="hobbies" value="Movies">
+	        	<label>Movies</label>
+	        </span>
+	        <span>
+	        	<input type="checkbox" name="hobbies" value="Sports">
+	        	<label>Sports</label>
+	        </span>
+	        <span>
+	        	<input type="checkbox" name="hobbies" value="Travel">
+	        	<label>Travel</label>
+	        </span>
+	        <span>
+	        	<input type="checkbox" name="hobbies" value="Reading">
+	        	<label>Reading</label>
+	        </span>
+	        <span>
+	        	<input type="checkbox" name="hobbies" value="Gaming">
+	        	<label>Gaming</label>
+	        </span>
+		</fieldset>	
+
+		<div id="passwordInput">
+			<fieldset>
+				<legend><label for="password">Password:</label></legend>
+				<input type="password" id="password" placeholder="Enter your Password" required>
+			</fieldset>	
+
+			<fieldset>
+				<legend><label for="confirmPassword">Confirm Password:</label></legend>
+				<input type="password" id="confirmPassword" placeholder="Confirm your Password" required>
+			</fieldset>	
+		</div>
+
+        <button type="submit" id="submitBtn">Register!</button>
+
+	</form>
+
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
