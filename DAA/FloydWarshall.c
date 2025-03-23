@@ -95,3 +95,23 @@ void main()
 
     getch();
 }
+
+
+
+
+// Output
+/*
+
+Enter the number of nodes: 4
+Enter the adjacency matrix (use 0 for self-loops and 99 for no edge):
+0 3 99 5
+2 0 99 4
+99 1 0 99
+99 99 2 0
+Shortest path matrix:
+0       3       7       5
+2       0       6       4
+3       1       0       5
+5       3       2       0
+
+*/
