@@ -60,3 +60,14 @@ optimal_path, total_cost = steepest_ascent_hill_climbing(distance_matrix)
 print(f"Number of cities: {len(distance_matrix)}")
 print(f"Optimal path: {optimal_path}")
 print(f"Total cost: {total_cost}")
+
+
+
+
+
+# Output:
+'''
+Number of cities: 4
+Optimal path: [1, 3, 2, 0]
+Total cost: 80
+'''
