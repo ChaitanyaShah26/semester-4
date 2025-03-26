@@ -10,8 +10,8 @@
     <a href="https://github.com/ChaitanyaShah26/semester-4/tree/main/DAA">
     	<img src="https://custom-icon-badges.demolab.com/badge/DAA-2B547E?style=for-the-badge&logo=folder" alt="DAA">
 	</a>
-    <a href="https://github.com/ChaitanyaShah26/semester-4/tree/main/OS">
-    	<img src="https://custom-icon-badges.demolab.com/badge/OS-2B547E?style=for-the-badge&logo=folder" alt="OS">
+    <a href="https://github.com/ChaitanyaShah26/semester-4/tree/main/OS-CN">
+    	<img src="https://custom-icon-badges.demolab.com/badge/OS%20&%20CN-2B547E?style=for-the-badge&logo=folder" alt="OS-CN">
     </a>
     <a href="https://github.com/ChaitanyaShah26/semester-4/tree/main/Web-Dev">
     	<img src="https://custom-icon-badges.demolab.com/badge/Web_Dev-2B547E?style=for-the-badge&logo=folder" alt="Web-Dev">
