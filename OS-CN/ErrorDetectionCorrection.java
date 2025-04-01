@@ -63,7 +63,7 @@ class ErrorDetectionCorrection
         System.out.print("Enter received data (binary): ");
         String receivedData = sc.nextLine();
         
-        boolean isError = detectCRCError(sentData, receivedData, generator);
+        boolean isError = detectCRCError(sentData, receivedData, crcResult);
         System.out.println(isError ? "Error Detected!" : "No Error Detected.");
     }
 
@@ -95,12 +95,9 @@ class ErrorDetectionCorrection
     }
 
     // Detect error in CRC
-    private static boolean detectCRCError(String sentData, String receivedData, String generator) 
+    private static boolean detectCRCError(String sentData, String receivedData, String crcResult) 
     {
-        String sentCRC = performCRCDivision(sentData, generator);
-        String receivedCRC = performCRCDivision(receivedData, generator);
-        
-        return !sentCRC.equals(receivedCRC);
+        return !receivedData.equals(sentData+crcResult);
     }
 
     // Hamming Code Method
