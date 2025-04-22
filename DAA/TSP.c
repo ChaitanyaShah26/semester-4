@@ -87,9 +87,6 @@ void main()
     getch();
 }
 
-// output : Min cost : 35 , Optimal Path : 0 1 3 2 0 
-
-
 // Output:
 /*
 
