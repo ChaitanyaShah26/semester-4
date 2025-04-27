@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main 
+class LRU 
 {
     public static void main(String[] args) 
     {
