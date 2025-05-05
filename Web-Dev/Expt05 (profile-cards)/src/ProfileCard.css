@@ -1,0 +1,182 @@
+.profile-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+  color: white;
+  padding: 25px 20px 20px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.profile-name {
+  margin: 0 0 4px 0;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.profile-bio {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 300;
+  opacity: 0.9;
+  line-height: 1.3;
+}
+
+.profile-details {
+  padding: 20px 20px 15px 20px;
+  flex-grow: 1;
+  background-color: #fcfdff;
+}
+
+.detail-section {
+  margin-bottom: 18px;
+  text-align: left;
+}
+.detail-section:last-child {
+   margin-bottom: 0;
+}
+
+.detail-section h3 {
+  font-size: 0.95rem;
+  color: #fc5c7d;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-list li {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border: 1px solid transparent;
+}
+
+.interests-list li {
+    background-color: rgba(106, 130, 251, 0.1);
+    color: #6a82fb;
+    border-color: rgba(106, 130, 251, 0.3);
+}
+.hobbies-list li {
+    background-color: rgba(252, 92, 125, 0.1);
+    color: #fc5c7d;
+     border-color: rgba(252, 92, 125, 0.3);
+}
+.skills-list li {
+    background-color: rgba(67, 206, 162, 0.1);
+    color: #43cfa2;
+     border-color: rgba(67, 206, 162, 0.3);
+}
+
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
+.connect-btn {
+  background: linear-gradient(135deg, #6a82fb 0%, #8360c3 100%);
+  color: white;
+}
+
+.connect-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 15px rgba(106, 130, 251, 0.3);
+}
+
+.connect-btn.connected {
+    background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+    cursor: default;
+}
+.connect-btn.connected:hover {
+    opacity: 1;
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.like-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0;
+  color: #bdc3c7;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.2s ease;
+  line-height: 1;
+}
+
+.like-btn:hover {
+   color: #e0e0e0;
+   transform: scale(1.15);
+}
+
+.like-btn.liked {
+  color: #e74c3c;
+}
+
+.like-btn.liked:hover {
+   color: #ff5f5f;
+   transform: scale(1.1);
+}
+
+
+.like-btn span {
+    display: inline-block;
+}
+
+.like-count {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  min-width: 20px;
+  text-align: right;
+}
