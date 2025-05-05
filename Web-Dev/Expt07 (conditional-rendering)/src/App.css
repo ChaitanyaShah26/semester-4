@@ -1,0 +1,226 @@
+/* General Styles */
+:root {
+  --primary-color: #61dafb; /* React blue */
+  --secondary-color: #282c34; /* Dark background */
+  --text-color: #333;
+  --light-text-color: #f0f0f0;
+  --bg-color: #f7f9fc;
+  --card-bg: #ffffff;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+   --error-color: #f44336;
+  --border-color: #e0e0e0;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* App Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  width: 90%;
+  display: grid;
+  gap: 1.5rem; /* Space between cards */
+}
+
+.app-footer {
+  background-color: #e0e0e0;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9em;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.card p {
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+/* Component Specific Styles */
+.greeting {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.greeting h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3em;
+}
+
+.greeting p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+}
+
+.user-greeting {
+  background-color: #e8f5e9; /* Light green */
+  border-left: 5px solid var(--success-color);
+  color: #2e7d32; /* Darker green */
+}
+
+.guest-greeting {
+  background-color: #fff3e0; /* Light orange */
+  border-left: 5px solid var(--warning-color);
+  color: #e65100; /* Darker orange */
+}
+
+
+.auth-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 1rem; /* Space above button */
+}
+
+.auth-button:hover {
+  opacity: 0.9;
+}
+.auth-button:active {
+    transform: scale(0.98);
+}
+
+
+.login-button {
+  background-color: var(--info-color);
+}
+
+.logout-button {
+  background-color: var(--error-color);
+}
+
+
+.logged-in-content {
+  background-color: #e3f2fd; /* Light blue */
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+   border: 1px solid #bbdefb;
+}
+.logged-in-content p {
+    color: #1565c0; /* Darker blue */
+}
+
+
+.secret-toggle-button {
+    background-color: #673ab7; /* Deep purple */
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+    display: inline-block; /* Or block depending on desired layout */
+}
+.secret-toggle-button:hover {
+    background-color: #5e35b1;
+}
+
+.secret-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #f3e5f5; /* Light purple */
+    border-radius: 4px;
+    color: #6a1b9a; /* Dark purple */
+    font-style: italic;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.info-message {
+    font-style: italic;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem; /* Add some space when it appears */
+}
+.warning-message {
+    font-weight: bold;
+    color: var(--warning-color);
+    background-color: #fff8e1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #ffe0b2;
+    margin-top: 1rem;
+}
+
+
+/* Emphasis */
+strong { color: var(--success-color); }
+em { color: var(--error-color); }
