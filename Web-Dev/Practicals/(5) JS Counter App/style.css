@@ -1,0 +1,16 @@
+body { 
+	text-align: center; 
+	font-family: sans-serif; 
+}
+
+#counterValue { 
+	font-size: 2em; 
+	margin: 20px; 
+}
+
+button { 
+	padding: 10px 15px; 
+	margin: 5px; 
+	font-size: 1em;
+	cursor: pointer; 
+}
