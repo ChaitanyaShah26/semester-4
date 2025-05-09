@@ -1,0 +1,35 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	background-color: grey;
+}
+
+nav {
+	position: 
+	width: 100%;
+	text-align: center;
+	background-color: lightgrey;
+}
+nav ul {
+	list-style: none;
+}
+
+main {
+	width: 100%;
+	padding: 40px;
+}
+
+footer {
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: midnightblue;
+	color: white;
+}

@@ -1,0 +1,27 @@
+ body {
+    font-family: Arial, sans-serif; /* Set font */
+    background-color: #f0f0f0; /* Background color */
+}
+.profile-card {
+    border: 2px solid #007bff; /* Border */
+    padding: 20px; /* Padding inside */
+    margin: 30px auto; /* Margin outside (centered) */
+    width: 300px;
+    background-color: #ffffff; /* Card background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow */
+}
+.profile-card img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make image circular */
+    margin: 0 auto 15px; /* Center image */
+}
+.profile-card h2 {
+    text-align: center;
+    color: #333;
+}
+.profile-card p {
+    color: #555;
+    line-height: 1.5;
+}
