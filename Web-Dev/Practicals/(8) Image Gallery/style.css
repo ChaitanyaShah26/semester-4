@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between images */
+    padding: 20px;
+}
+.gallery img {
+    width: 100%; /* Make image fill container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+.gallery img:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    opacity: 0.8; /* Slightly transparent */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add shadow on hover */
+    /* Other examples: */
+    /* filter: grayscale(100%); */ /* Grayscale effect */
+}
